@@ -1,4 +1,4 @@
-const { rules } = require("../../apps/web/.eslintrc.cjs");
+const { rules, plugins } = require("../../apps/web/.eslintrc.cjs");
 
 module.exports = {
     root: true,
@@ -6,9 +6,15 @@ module.exports = {
     extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
-        'prettier',
+        'plugin:react-hooks/recommended',
+        'plugin:prettier/recommended',
+        'turbo'
     ],
+    plugins: ['import'],
     ignorePatterns: ['dist', '.eslintrc.cjs'],
     parser: '@typescript-eslint/parser',
+    rules: {
+        'import/order': 'warn',
+    }
 
 }

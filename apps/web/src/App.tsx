@@ -9,6 +9,7 @@ function App() {
   const d = "d variavel";
 
   const data = 1;
+
   return (
     <>
       <div>

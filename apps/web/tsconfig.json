@@ -2,7 +2,7 @@
   "exclude": [
     "node_modules"
   ],
-  "extends": "@fxamauri-react-playground/typescript-config/vite.json",
+  "extends": "@fxamauri-react-playground/typescript-config/index.json",
   "compilerOptions": {
     "rootDir": ".",
     "outDir": "dist"
